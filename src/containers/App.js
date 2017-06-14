@@ -11,6 +11,7 @@ import baseTheme from '../myTheme'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 
 import Reddit from './Reddit'
+import ScrollTest from './ScrollTest'
 
 class App extends Component {
   static propTypes = {
@@ -34,6 +35,7 @@ class App extends Component {
         <ConnectedRouter history={this.props.history}>
           <div style={{height: '100%'}}>
             <Route exact path='/' component={Reddit} />
+            <Route exact path='/scroll' component={ScrollTest} />
           </div>
         </ConnectedRouter>
       </Provider>
